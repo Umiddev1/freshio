@@ -4,12 +4,1064 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <title>Freshio</title>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <!-- /icons -->
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- /bootstrap -->
+  <!-- css -->
   <link rel="stylesheet" href="css/main.min.css">
+  <!-- /css -->
 </head>
 <body>
-
+  <div class="freshio__menu-top menu-top d-none d-md-block">
+    <div class="menu-top__container container">
+      <div class="menu-top__contents d-flex justify-content-between align-items-center">
+        <div class="menu-top__texts">
+          <p class="menu-top__text">FREE express international delivery + EASY returns</p>
+        </div>
+        <div class="menu-top__navbar menu-top__nav">
+          <ul class="menu-top__list d-flex"> 
+            <li class="menu-top__item"><a class="menu-top__link" href="#">about</a></li>
+            <li class="menu-top__item"><a class="menu-top__link" href="#">faq</a></li>
+            <li class="menu-top__item"><a class="menu-top__link" href="#">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="freshio__main" id="bigmain">
+    <header class="freshio__header freshio-header">
+      <div class="freshio-header__desktop d-none d-md-block">
+      <div class="freshio-header__container container">
+          <div class="freshio-header__contents d-flex align-items-center  justify-content-between">
+            <a class="freshio-header__logolink" href="index.html">
+              <img class="freshio-header__logo" src="img/header-img/freshio-logo.jpg" alt="logo">
+            </a>
+            <form class="freshio-header__form" action="https://echo.htmlacademy.ru/" method="post">
+              <i class='freshio-header__search bx bx-search-alt-2'></i>
+              <input class="freshio-header__inp" type="text" name="search" id="searchs" placeholder="Enter Keyword..." aria-label="search">
+              <button class="freshio-header__btn">search</button>
+            </form>
+            <div class="freshio-header__icons">
+              <ul class="freshio-header__list d-flex m-0">
+                <li class="freshio-header__item"  data-bs-toggle="offcanvas"  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <a class="freshio-header__link" href="#"><i class="bi bi-person"></i></a>
+                  <div class="offcanvas offcanvas-end freshio-header__canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header freshio-header__canvastop">
+                      <a href="#">
+                        <img src="img/header-img/freshio-logo.jpg" alt="logo">
+                      </a>
+                      <button type="button" class="freshio-header__canvasbtn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body freshio-header__canvasmain canvas-main">
+                      <a class="canvas-main__link" href="#">existing account login</a>
+                      <form action="https://echo.htmlacademy.ru/" method="post">
+                        <div class="canvas-main__group">
+                          <input class="canvas-main__inp" type="email" name="canvasmail" placeholder="Email Address" required>
+                        </div>
+                        <div class=" canvas-main__group">
+                          <input class="canvas-main__inp" type="password" name="canvasmail" placeholder="Password" required>
+                        </div>
+                        <div class="canvas-main__checks d-flex align-items-center justify-content-between">
+                          <div class="canvas-maincheckgroup d-flex align-items-center">
+                            <input class="canvas-main__check" type="checkbox" id="check">
+                            <label class="canvas-main__lb" for="check">Remember Me</label>
+                          </div>
+                          <div class="canvas-main__checkgroup">
+                            <a class="canvas-main__links" href="#">Forgot Password</a>
+                          </div>
+                        </div>
+                        <button class="canvas-main__btn" type="submit">login</button>
+                      </form>
+                      <div class="canvas-main__social social">
+                        <a class="social__links" href="#">Connect with Social Networks</a>
+                        <ul class="social__list d-flex m-0 p-0">
+                          <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-facebook'></i></span></a></li>
+                          <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-google'></i></span></a></li>
+                          <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-twitter'></i></span></a></li>
+                        </ul>
+                        <a class="canvas-main__link" href="#">new account register</a>
+                      </div>
+                      <div class="canvas__bigform">
+                        <form action="https://echo.htmlacademy.ru/" method="post">
+                          <div class="canvas-main__group">
+                            <input class="canvas-main__inp" type="text" name="canvasmail" placeholder="First Name" required>
+                          </div>
+                          <div class=" canvas-main__group">
+                            <input class="canvas-main__inp" type="text" name="canvasmail" placeholder="Last Name" required>
+                          </div>
+                          <div class="canvas-main__group">
+                            <input class="canvas-main__inp" type="email" name="canvasmail" placeholder="Email Address" required>
+                          </div>
+                          <div class=" canvas-main__group">
+                            <input class="canvas-main__inp" type="password" name="canvasmail" placeholder="Password" required>
+                          </div>
+                          <div class="canvas-maincheckgroup d-flex align-items-center">
+                            <input class="canvas-main__check" type="checkbox" id="check">
+                            <label class="canvas-main__lb" for="check">I agree to the terms</label>
+                          </div>
+                          <button class="canvas-main__btn canvas-main__btns" type="submit">Create an Account</button>
+                          </form>
+                      </div>
+                      <div class="canvas-main__languages row align-items-center">
+                        <div class="canvas-main__language language col-md-6">
+                          <span class="language__text">Language</span>
+                          <ul class="language__list p-0 m-0 row">
+                            <li class="language__item language__items--active col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-usa.jpg" alt="usa"></a>
+                            </li>
+                            <li class="language__item col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-france.jpg" alt="usa"></a>
+                            </li>
+                            <li class="language__item col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-germany.jpg" alt="usa"></a>
+                            </li>
+                            <li class="language__item col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-italy.jpg" alt="usa"></a>
+                            </li>
+                            <li class="language__item col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-spanish.jpg" alt="usa"></a>
+                            </li>
+                            <li class="language__item col-sm-4">
+                              <a href="#"><img src="img/header-canvas/canvas-saudia.jpg" alt="usa"></a>
+                            </li>
+                          </ul>
+                          <div class="language__currens">
+                            <span class="language__text language__textsss">Currency:</span>
+                            <ul class="language__lists d-flex p-0">
+                              <li class="language__item"><a class="language__links" href="#">EUR</a></li>
+                              <li class="language__item language__item--active"><a class="language__links" href="#">USD</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="canvas-main__signin signin col-md-6 mt-3">
+                          <ul class="signin__list p-0 m-0">
+                            <li class="signin__item"><a class="signin__link" href="#"><span class="signin__icons"><i class="far fa-sign-in"></i></span>Sign in</a></li>
+                            <li class="signin__item"><a class="signin__link" href="#"><span class="signin__icons"><i class="fad fa-user-alt"></i></span>My account</a></li>
+                            <li class="signin__item"><span><i class="fal fa-heart"></i></span><a class="signin__link" href="#">Wishlist (0)</a></li>
+                            <li class="signin__item"><span class="signin__icon"><i class='bx bx-git-compare'></i></span><a class="signin__link" href="#">Compare</a></li>
+                            <li class="signin__item"><span class="signin__icon"><i class='bx bxs-check-square'></i></span><a class="signin__link" href="#">Checkout</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="freshio-header__item"><a class="freshio-header__link freshio-header__links" href="#"><i class='bx bx-heart'></i></a><span class="freshio-header__zero"><a class="freshio-header__zerolink" href="#">0</a></span>
+                </li>
+                <li class="freshio-header__item"><a class="freshio-header__link" href="#"><i class="bi bi-basket"></i></a>
+                  <span class="freshio-header__zero"><a class="freshio-header__zerolink" href="#">0</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="freshio-header__navbars d-flex align-items-center">
+            <div class="freshio-header__shops shops d-flex align-items-center">
+              <button class="shops__icon"><i class="bi bi-list"></i></button>
+              <a class="shops__link" href="#">Shop by Departament</a>
+              <div class="shops__inner">
+                <ul class="shops__inner-list">
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-salad"></i></span>Fruits & Vegetables</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-meat"></i></span>Supplyments</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-egg-fried"></i></span>Dairy Bread & Eggs</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-pizza-slice"></i></span>Package Foods</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-apple-alt"></i></span>Beauty & Care</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-volleyball-ball"></i></span>Health & Wellness</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-ice-cream"></i></span>Baby & Infants</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-leaf"></i></span>Home Care</a></li>
+                  <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-badge-percent"></i></span>Hot Offers</a></li>
+                </ul>
+              </div>
+            </div>
+            <nav class="freshio-header__navbar nav">
+              <ul class="nav__list d-flex justify-content-between m-0">
+                <li class="nav__item"><a class="nav__link" href="#">Home<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a>
+                <ul class="nav__inner-list"> 
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home1</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home2</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home3</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home4</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home5</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home6</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home7</a></li>
+                  <li class="nav__inner-item"><a class="nav__inner-link" href="#">Home8</a></li>
+                </ul>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">Shop<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a>
+                  <div class="nav__group row">
+                    <ul class="nav__inner-lists col-sm-3">
+                      <li class="nav__inner-item"><h4 class="nav__inner-title">Categories 1</h4></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Vegatable</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Tomato</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Cabbage</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Juice</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Meat</a></li>
+                    </ul>
+                    <ul class="nav__inner-lists col-sm-3">
+                      <li class="nav__inner-item"><h4 class="nav__inner-title">Categories 2</h4></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Beef</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Pork</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Coconut</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Broccoli</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fish</a></li>
+                    </ul>
+                    <ul class="nav__inner-lists col-sm-3">
+                      <li class="nav__inner-item"><h4 class="nav__inner-title">Categories 3</h4></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Seafood</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Octopus</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fish</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Park</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">More</a></li>
+                    </ul>
+                    <ul class="nav__inner-lists col-sm-3">
+                      <li class="nav__inner-item"><h4 class="nav__inner-title">Categories 1</h4></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Vegatable</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fresh Meat</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fruit & Nut Gifts</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fresh Berries</a></li>
+                      <li class="nav__inner-item"><a class="nav__inner-link" href="#">Fat Freezing</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">Pages<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a>
+                  <div class="nav__groups">
+                    <ul class="nav__inner-lists d-flex justify-content-evenly p-0">
+                      <li class="nav__inner-items"><img class="nav__img" src="img/header-img/hd-img.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img" src="img/header-img/hd-img.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img" src="img/header-img/hd-img.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img" src="img/header-img/hd-img.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img nav__imgs" src="img/header-img/hdd-img.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img nav__imgss" src="img/header-img/hd-big.jpg" alt="nav-img"></li>
+                      <li class="nav__inner-items"><img class="nav__img nav__imgss" src="img/header-img/hd-big-2.jpg" alt="nav-img"></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul> 
+            </nav>
+          </div>
+      </div>
+      </div>
+      <div class="freshio-header__mobile mobile d-md-none">
+        <div class="mobile__container container">
+            <div class="mobile__contents d-flex justify-content-between align-items-center">
+              <div class="mobile__burgermenu">
+                <button class="mobile__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-list"></i></button>
+                <div class="mobile__rightmenu offcanvas offcanvas-start" id="demo">
+                  <div class="offcanvas-header mobile__header">
+                    <button type="button" class="mobile__close" data-bs-dismiss="offcanvas"><i class="bi bi-x"></i></button>
+                    <span class="mobile__close-text">Close</span>
+                  </div>
+                  <div class="offcanvas-body p-0">
+                    <ul class="mobile__rightmenu-list p-0 m-0">
+                      <li class="mobile__rightmenu-item d-flex align-items-center justify-content-between">
+                        <a class="mobile__rightmenu-link" href="#">Home</a>
+                        <span class="mobile__carets"><i class="mobile__caret fal fa-angle-double-right"></i></span>
+                      </li>
+                      <li class="mobile__rightmenu-item d-flex align-items-center justify-content-between">
+                        <a class="mobile__rightmenu-link" href="#">Shop</a>
+                        <span class="mobile__carets"><i class="mobile__caret fal fa-angle-double-right"></i></span>
+                      </li>
+                      <li class="mobile__rightmenu-item d-flex align-items-center justify-content-between">
+                        <a class="mobile__rightmenu-link" href="#">Pages</a>
+                        <span class="mobile__carets"><i class="mobile__caret fal fa-angle-double-right"></i></span>
+                      </li>
+                      <li class="mobile__rightmenu-item">
+                        <a class="mobile__rightmenu-link" href="#">Blog</a>
+                      </li>
+                      <li class="mobile__rightmenu-item">
+                        <a class="mobile__rightmenu-link" href="#">Contac</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__logos">
+                <a class="mobile__logo-link" href="#">
+                  <img class="mobile__logo" src="img/header-img/freshio-logo.jpg" alt="logo">
+                </a>
+              </div>
+              <div class="mobile__carzinas">
+                <span class="mobile__carzina"><i class="mobile__carzina-icon bi bi-basket"></i></span>
+                <span class="mobile__carzina-wrapper"><a class="mobile__carzina-link" href="#">0</a></span>
+              </div>
+            </div>
+            <div class="freshio-header__navbars d-flex align-items-center">
+              <div class="freshio-header__shops shops d-flex align-items-center">
+                <button class="shops__icon"><i class="bi bi-list"></i></button>
+                <a class="shops__link" href="#">Shop by Departament</a>
+                <div class="shops__inner">
+                  <ul class="shops__inner-list">
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-salad"></i></span>Fruits & Vegetables</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-meat"></i></span>Supplyments</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-egg-fried"></i></span>Dairy Bread & Eggs</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-pizza-slice"></i></span>Package Foods</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-apple-alt"></i></span>Beauty & Care</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="far fa-volleyball-ball"></i></span>Health & Wellness</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-ice-cream"></i></span>Baby & Infants</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-leaf"></i></span>Home Care</a></li>
+                    <li class="shops__inner-item d-flex align-items-center"><a class="shops__inner-link" href="#"><span class="shops__inner-icons"><i class="fal fa-badge-percent"></i></span>Hot Offers</a></li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="freshio-header__navbar nav d-none d-md-block">
+                <ul class="nav__list d-flex justify-content-between m-0">
+                  <li class="nav__item"><a class="nav__link" href="#">Home<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Shop<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Pages<span class="nav__icon"><i class='bx bx-chevron-down'></i></span></a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+        <div class="mobile__bottom-icons bottom-icons">
+          <ul class="bottom-icons__list d-flex align-items-center justify-content-between p-0 m-0">
+            <li class="bottom-icons__iten text-center"><a class="bottom-icons__link" href="#"><span class="bottom-icons__span"><i class="bottom-icons__icon bottom-icons__iconss fal fa-store"></i></span><br>
+            <span class="bottom-icons__text">Shop</span></a></li>
+            <li class="bottom-icons__iten text-center"><a class="bottom-icons__link" href="#"><span class="bottom-icons__span"><i class="fal fa-heart"></i></span><br>
+              <span class="bottom-icons__text">Wishlist</span></a>
+            </li>
+            <li class="bottom-icons__iten text-center"  data-bs-toggle="offcanvas"  data-bs-target="#offcanvasRightt" aria-controls="offcanvasRight"><a class="bottom-icons__link" href="#"><span class="bottom-icons__span"><i class="fal fa-user-alt"></i></span><br>
+              <span class="bottom-icons__text">Account</span></a>
+              <div class="offcanvas offcanvas-end freshio-header__canvas" tabindex="-1" id="offcanvasRightt" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header freshio-header__canvastop">
+                  <a href="#">
+                    <img src="img/header-img/freshio-logo.jpg" alt="logo">
+                  </a>
+                  <button type="button" class="freshio-header__canvasbtn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body freshio-header__canvasmain canvas-main">
+                  <a class="canvas-main__link" href="#">existing account login</a>
+                  <form action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="canvas-main__group">
+                      <input class="canvas-main__inp" type="email" name="canvasmail" placeholder="Email Address" required>
+                    </div>
+                    <div class=" canvas-main__group">
+                      <input class="canvas-main__inp" type="password" name="canvasmail" placeholder="Password" required>
+                    </div>
+                    <div class="canvas-main__checks d-flex align-items-center justify-content-between">
+                      <div class="canvas-maincheckgroup d-flex align-items-center">
+                        <input class="canvas-main__check" type="checkbox" id="check">
+                        <label class="canvas-main__lb" for="check">Remember Me</label>
+                      </div>
+                      <div class="canvas-main__checkgroup">
+                        <a class="canvas-main__links" href="#">Forgot Password</a>
+                      </div>
+                    </div>
+                    <button class="canvas-main__btn" type="submit">login</button>
+                  </form>
+                  <div class="canvas-main__social social">
+                    <a class="social__links" href="#">Connect with Social Networks</a>
+                    <ul class="social__list d-flex m-0 p-0">
+                      <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-facebook'></i></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-google'></i></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="social__spans"><i class='bx bxl-twitter'></i></span></a></li>
+                    </ul>
+                    <a class="canvas-main__link" href="#">new account register</a>
+                  </div>
+                  <div class="canvas__bigform">
+                    <form action="https://echo.htmlacademy.ru/" method="post">
+                      <div class="canvas-main__group">
+                        <input class="canvas-main__inp" type="text" name="canvasmail" placeholder="First Name" required>
+                      </div>
+                      <div class=" canvas-main__group">
+                        <input class="canvas-main__inp" type="text" name="canvasmail" placeholder="Last Name" required>
+                      </div>
+                      <div class="canvas-main__group">
+                        <input class="canvas-main__inp" type="email" name="canvasmail" placeholder="Email Address" required>
+                      </div>
+                      <div class=" canvas-main__group">
+                        <input class="canvas-main__inp" type="password" name="canvasmail" placeholder="Password" required>
+                      </div>
+                      <div class="canvas-maincheckgroup d-flex align-items-center">
+                        <input class="canvas-main__check" type="checkbox" id="check">
+                        <label class="canvas-main__lb" for="check">I agree to the terms</label>
+                      </div>
+                      <button class="canvas-main__btn canvas-main__btns" type="submit">Create an Account</button>
+                      </form>
+                  </div>
+                  <div class="canvas-main__languages row align-items-center">
+                    <div class="canvas-main__language language col-md-6">
+                      <span class="language__text">Language</span>
+                      <ul class="language__list p-0 m-0 row">
+                        <li class="language__item language__items--active col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-usa.jpg" alt="usa"></a>
+                        </li>
+                        <li class="language__item col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-france.jpg" alt="usa"></a>
+                        </li>
+                        <li class="language__item col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-germany.jpg" alt="usa"></a>
+                        </li>
+                        <li class="language__item col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-italy.jpg" alt="usa"></a>
+                        </li>
+                        <li class="language__item col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-spanish.jpg" alt="usa"></a>
+                        </li>
+                        <li class="language__item col-sm-4">
+                          <a href="#"><img src="img/header-canvas/canvas-saudia.jpg" alt="usa"></a>
+                        </li>
+                      </ul>
+                      <div class="language__currens">
+                        <span class="language__text language__textsss">Currency:</span>
+                        <ul class="language__lists d-flex p-0">
+                          <li class="language__item"><a class="language__links" href="#">EUR</a></li>
+                          <li class="language__item language__item--active"><a class="language__links" href="#">USD</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="canvas-main__signin signin col-md-6 mt-3">
+                      <ul class="signin__list p-0 m-0">
+                        <li class="signin__item"><a class="signin__link" href="#"><span class="signin__icons"><i class="far fa-sign-in"></i></span>Sign in</a></li>
+                        <li class="signin__item"><a class="signin__link" href="#"><span class="signin__icons"><i class="fad fa-user-alt"></i></span>My account</a></li>
+                        <li class="signin__item"><span><i class="fal fa-heart"></i></span><a class="signin__link" href="#">Wishlist (0)</a></li>
+                        <li class="signin__item"><span class="signin__icon"><i class='bx bx-git-compare'></i></span><a class="signin__link" href="#">Compare</a></li>
+                        <li class="signin__item"><span class="signin__icon"><i class='bx bxs-check-square'></i></span><a class="signin__link" href="#">Checkout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="bottom-icons__iten text-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><a class="bottom-icons__link" href="#"><span class="bottom-icons__span"><i class="fal fa-search"></i></span><br>
+              <span class="bottom-icons__text">Search</span></a>
+            <div class="offcanvas offcanvas-top bottom-icons__modal" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+               <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+          <div class="offcanvas-body bottom-icons__body p-0">
+            <form class="bottom-icons__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="sch"></label>
+              <input class="bottom-icons__inp" type="search" name="search" id="sch" placeholder="Enter Keyword..."> 
+              <span class="bottom-icons__formicon"><i class="fal fa-search"></i></span>
+              <button class="bottom-icons__btn" type="button">Search</button>
+            </form>
+          </div>
+              </div>
+            </li>       
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="freshio__hero hero" id="heros">
+      <div class="hero__container container">
+        <div class="hero__contents row">
+          <div class="hero__groups col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <div id="carouselExampleControls" class="hero__slide carousel slide" data-bs-ride="carousel">
+              <div class="hero__carusel-inner carousel-inner">
+                <div class="hero__item carousel-item active">
+                  <img class="hero__big-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184" alt="hero-big-img">
+                  <div class="hero__des">
+                    <p class="hero__text">Fresh and Tasty</p>
+                    <h2 class="hero__title">Farm Market<br>Organic Shop</h2>
+                    <a class="hero__link" href="#">Shop Now <span class="hero__icon"><i class="hero__fal fal fa-angle-double-right"></i></span></a>
+                  </div>
+                </div>
+                <div class="hero__item carousel-item">
+                  <img class="hero__big-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide1.jpg?v=1614305184" alt="hero-big-img">
+                  <div class="hero__des">
+                    <p class="hero__text">Fresh and Tasty</p>
+                    <h2 class="hero__title">Farm Market<br>Organic Shop</h2>
+                    <a class="hero__link" href="#">Shop Now <span class="hero__icon"><i class="hero__fal fal fa-angle-double-right"></i></span></a>
+                  </div>
+                </div>
+              </div>
+                <div class="hero__btns">
+                  <button class="hero__arrow hero__next carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="fal fa-long-arrow-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  <button class="hero__arrow hero__prev carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="fal fa-long-arrow-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__groups col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="hero__imgss">
+               <img class="hero__img" src="img/hero-img/hero-img-one.jpg" alt="hero-one"> 
+               <div class="hero__dess">
+                <h3 class=" hero__titless">Discover<br>Real Organi<br>Flavors</h3>
+                <a class="hero__link" href="#">Shop Now <span class="hero__icon"><i class="fal fa-angle-double-right"></i></span></a>
+              </div> 
+            </div>
+            <div class="hero__imgs">
+               <img class="hero__img" src="img/hero-img/hero-img-two.jpg" alt="hero-two"> 
+               <div class="hero__sale">
+                  <h4 class="hero__texts">Summer Sale</h4>
+                  <p class="hero__saletext">50% Off</p>
+                  <p class="hero__saletexts">Vitamins, Supplements and Herbs</p>
+                  <a class="hero__links" href="#">Shop Now <span class="hero__icon"><i class="fal fa-angle-double-right"></i></span></a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+    <section class="freshio__intro intro" id="intros">
+      <div class="intro__container container">
+        <div class="intro__contents">
+          <ul class="intro__list row">
+            <li class="intro__item col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="intro__inner">
+                <h3 class="intro__inner-title">Curated Products</h3>
+                <p class="intro__inner-text">from Handpicked Sellers</p>
+              </div>
+            </li>
+            <li class="intro__item col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="intro__inner">
+                <h3 class="intro__inner-title">Handmade</h3>
+                <p class="intro__inner-text">Made with passion by 300+ curators across the country.</p>
+              </div>
+            </li>
+            <li class="intro__item col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="intro__inner">
+                <h3 class="intro__inner-title">100% Natural</h3>
+                <p class="intro__inner-text">Eat local, consume local, closer to nature.</p>
+              </div>
+            </li>
+            <li class="intro__item col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="intro__inner">
+                <h3 class="intro__inner-title">Shipping</h3>
+                <p class="intro__inner-text">Across West & East India</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="freshio__product product" id="products">
+      <div class="container">
+        <div class="product__des d-flex justify-content-between align-items-center">
+          <h2 class="product__title">Featured Products</h2>
+          <a class="product__link" href="#">Shop All <i class="fal fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <!-- bootstarni karus -->
+      <div class="product__carousel carousel slide" id="carouselExampleControlsNoTouchin" data-bs-touch="false" data-bs-interval="false">
+        <ul class="product__carousel-inner row p-0 ">
+          <li class="product__carousel-item carousel-item active  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <ul class="product__lists d-flex row p-0 ">
+              <li class="product__items product__items--active col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/carrots.jpg" alt="product-img"><img class="product__imgs" src="img/product-img/lemon.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Nut & Seed</p>
+                    <h4 class="product__titles">Organic High-Curcumin Tumeric<br>Powder</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/lemon.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Tomates</p>
+                    <h4 class="product__titles">Grassfed Organic Turmeric<br>Superghee</h4>
+                    <a class="product__sale" href="#">$15.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/apple.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Pamela's Products Artisan Blend<br>Flour Gluten Free</h4>
+                    <a class="product__sale" href="#">$29.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/banana.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="product__carousel-item carousel-item  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <ul class="product__lists row p-0">
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/onion.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Nut & Seed</p>
+                    <h4 class="product__titles">Organic High-Curcumin Tumeric<br>Powder</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/potates.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/pomidoro.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/arbus.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="product__btns">
+          <button class="product__btn product__btn-prev carousel-control-prev bg-danger" type="button" data-bs-target="#carouselExampleControlsNoTouchin" data-bs-slide="prev">
+            <span class="far fa-long-arrow-left" aria-hidden="true"></span>
+          </button>
+          <button class="product__btn product__btn-next carousel-control-next bg-danger" type="button" data-bs-target="#carouselExampleControlsNoTouchin" data-bs-slide="next">
+            <span class="far fa-long-arrow-right" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="freshio__foods foods" id="food"> 
+      <div class="foods__container container">
+        <ul class="foods__list p-0">
+          <li class="foods__item"><img class="foods__img" src="img/foods-img/foods-one.jpg" alt="one">
+            <div class="foods__inner foods__inner-one">
+              <h3 class="foods__inner-title">Fruits & Vegetables</h3>
+            </div>
+          </li>
+          <li class="foods__item"><img class="foods__img foods__img-two" src="img/foods-img/foods-two.jpg" alt="one">
+            <div class="foods__inner foods__inner-two">
+              <h3 class="foods__inner-title">Dairy Bread & <br> Eggs</h3>
+            </div>
+          </li>
+          <li class="foods__item"><img class="foods__img" src="img/foods-img/foods-three.jpg" alt="one">
+            <div class="foods__inner foods__inner-three">
+              <h3 class="foods__inner-title">Package <br> Foods</h3>
+            </div>
+          </li>
+          <li class="foods__item"><img class="foods__img" src="img/foods-img/foods-four.jpg" alt="one">
+            <div class="foods__inner foods__inner-four">
+              <h3 class="foods__inner-title">Beverages</h3>
+            </div>
+          </li>
+          <li class="foods__item"><img class="foods__img" src="img/foods-img/foods-fife.jpg" alt="one">
+            <div class="foods__inner foods__fife">
+              <h3 class="foods__inner-title">Health &  Wellness</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="freshio__product product" id="products">
+      <div class="container">
+        <div class="product__des d-flex justify-content-between align-items-center">
+          <h2 class="product__title">Best Seller</h2>
+          <a class="product__link" href="#">Shop All <i class="fal fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <!-- bootstarni karus -->
+      <div class="product__carousel carousel slide" id="carouselExampleControlsNoTouchinnn" data-bs-touch="false" data-bs-interval="false">
+        <ul class="product__carousel-inner row p-0 ">
+          <li class="product__carousel-item carousel-item active  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <ul class="product__lists d-flex row p-0 ">
+              <li class="product__items product__items--active col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/carrots.jpg" alt="product-img"><img class="product__imgs" src="img/product-img/lemon.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Nut & Seed</p>
+                    <h4 class="product__titles">Organic High-Curcumin Tumeric<br>Powder</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/lemon.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Tomates</p>
+                    <h4 class="product__titles">Grassfed Organic Turmeric<br>Superghee</h4>
+                    <a class="product__sale" href="#">$15.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/apple.jpg" alt="product-img">
+                  <ul class="product__heart-list d-flex">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Pamela's Products Artisan Blend<br>Flour Gluten Free</h4>
+                    <a class="product__sale" href="#">$29.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/banana.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="product__carousel-item carousel-item  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <ul class="product__lists row p-0">
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/onion.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Nut & Seed</p>
+                    <h4 class="product__titles">Organic High-Curcumin Tumeric<br>Powder</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/potates.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/pomidoro.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="product__items col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="product__border">
+                  <img class="product__img" src="img/product-img/arbus.jpg" alt="product-img">
+                  <ul class="product__heart-list">
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fas fa-eye"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fal fa-heart"></i></a></li>
+                    <li  class="product__heart-item"><a class="product__heart-link" href="#"><i class="fab fa-usb"></i></a></li>
+                  </ul>
+                  <div class="products__texts text-center">
+                    <p class="product__text">Home</p>
+                    <h4 class="product__titles">Frontier Co-Op Organic Adobo<br>Seasoning Blend</h4>
+                    <a class="product__sale" href="#">$22.00</a><br>
+                    <a class="product__linksss" href="#">Add to cart <i class="fal fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="product__btns">
+          <button class="product__btn product__btn-prev carousel-control-prev bg-danger" type="button" data-bs-target="#carouselExampleControlsNoTouchinnn" data-bs-slide="prev">
+            <span class="far fa-long-arrow-left" aria-hidden="true"></span>
+          </button>
+          <button class="product__btn product__btn-next carousel-control-next bg-danger" type="button" data-bs-target="#carouselExampleControlsNoTouchinnn" data-bs-slide="next">
+            <span class="far fa-long-arrow-right" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="freshio__people people" id="peoples">
+      <div class="people__container container">
+        <div class="people__contents row">
+          <div class="people__imgs col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <img class="people__img" src="img/people-img/people-woman.jpg" alt="woman">
+          </div>
+          <div class="people__des people__desss col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <h2 class="people__title">A shop for good people by good people</h2>
+            <p class="people__text">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+            <p class="people__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+            <a class="people__link" href="#">Store Location <i class="people__right fal fa-angle-double-right"></i></a>
+          </div>
+        </div>
+        <div class="people__contentss row flex-row-reverse align-items-center">
+          <div class="people__imgs col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <img class="people__img people__imgss" src="img/people-img/people-boy.jpg" alt="woman">
+          </div>
+          <div class="people__des people__dess col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="people__carusel carouselExampleIndicator" class="people__carusels carousel slide" data-bs-ride="carousel">
+              <div class="people__btns">
+                <div class="people__carosel-indifikator carousel-indicators">
+                  <button class="people__round-btn people__round-btn--active active" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button class="people__round-btn" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button class="people__round-btn" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+              <div class="people__carusel-inner carousel-inner">
+                <div class="people__carousel-item carousel-item active">
+                  <div class="people__group">
+                      <h2 class="people__title people__titles">Why customer love us</h2>
+                    </div>
+                    <p class="people__text people__texts">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="people__subtext">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+                <div class="people__carousel-item carousel-item">
+                  <div class="people__group">
+                      <h2 class="people__title people__titles">Why customer love us</h2>
+                    </div>
+                    <p class="people__text people__texts">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="people__subtext">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+                <div class="people__carousel-item carousel-item">
+                  <div class="people__group">
+                      <h2 class="people__title people__titles">Why customer love us</h2>
+                    </div>
+                    <p class="people__text people__texts">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="people__subtext">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <section class="freshio__testimonial testmon" id="testmonials">
+      <div class="testmon__container container">
+        <div class="testmon__contents">
+          <div id="carouselExampleControlsnn" class="testmon__slide carousel slide" data-bs-ride="carousel">
+            <div class="testmon__inner carousel-inner row">
+              <div class="testmon__item carousel-item active">
+               <ul class="testmon__inner-lists d-flex justify-content-between p-0">
+                 <li class="testmon__inner-item "><img  class="testmon__inner-img" src="img/testmonial-img/testmon-one.jpg" alt="testmon-img"></li>
+                 <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-two.jpg" alt="testmon-img"></li>
+                 <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-three.jpg" alt="testmon-img"></li>
+                 <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-four.jpg" alt="testmon-img"></li>
+                 <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-fife.jpg" alt="testmon-img"></li>
+                 <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-six.jpg" alt="testmon-img"></li>
+               </ul>
+              </div>
+              <div class="testmon__item carousel-item">
+                <ul class="testmon__inner-lists testmon__inner-listss d-flex justify-content-between p-0">
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-six.jpg" alt="testmon-img"></li>
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-fife.jpg" alt="testmon-img"></li>
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-four.jpg" alt="testmon-img"></li>
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-three.jpg" alt="testmon-img"></li>
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-two.jpg" alt="testmon-img"></li>
+                  <li class="testmon__inner-item"><img  class="testmon__inner-img" src="img/testmonial-img/testmon-one.jpg" alt="testmon-img"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="testmon__btns">
+              <button class="testmon__btn testmon__prev carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsnn" data-bs-slide="prev">
+                <span class="far fa-long-arrow-left" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="testmon__btn testmon__next carousel-control-next" type="button" data-bs-target="#carouselExampleControlsnn" data-bs-slide="next">
+                <span class="far fa-long-arrow-right" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section class="freshio__connect connect" id="connects">
+      <div class="connect__container container">
+        <div class="connect__contents row">
+          <div class="connect__group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="connect__border d-flex align-items-center text-sm-center">
+              <div>
+                <span class="connect__icon"><i class="connect__icons fal fa-headphones-alt"></i></span>
+              </div>
+              <div class="connect__dess">
+                <span class="connect__text">Phone Support</span>
+                  <h5 class="connect__title">Call Us 24/7</h5>
+                  <a class="connect__link" href="tel:1800-88-66-991">(1800)-88-66-991</a><br>
+                  <a class="connect__links" href="#">contact@example.com</a>
+              </div>
+            </div>
+            </div>
+            <div class="connect__group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="connect__border d-flex align-items-center text-sm-center">
+              <div>
+                <span class="connect__icon"><i class="connect__icons fal fa-envelope-open-text"></i></span>
+              </div>
+                <div class="connect__dess">
+                  <span class="connect__text">Daily Updates</span>
+                    <h5 class="connect__title connect__titles">subscribe us</h5>
+                    <span class="connect__links connect__linkss" href="#">Sign up and get a voucher of worth $250.00</span>
+                    <form class="connect__form" action="https://echo.htmlacademy.ru/" method="post">
+                      <label for="mail"></label>
+                      <input class="connect__inp" type="email" name="email" id="mail" required placeholder="Email address...">
+                      <i class="connect__righticon fal fa-long-arrow-right"></i>
+                    </form>
+                </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="freshio__footer footer">
+      <div class="footer__container container">
+        <div class="footer__contents d-flex justify-content-between">
+          <ul class="footer__list p-0">
+            <li class="footer__item"><b class="footer__title">STORE LOCATION</b></li>
+            <li class="footer__item"><address class="footer__text">9066 Green Lake Drive Chevy<br>
+              Chase, MD 20815</address></li>
+              <li class="footer__item"><span class="footer__subtext">Monday - Saturday:</span><p class="footer__text"><time datetime="2021-11-12">8:00 am - 4:00pm</time></p></li>
+              <li class="footer__item"><span class="footer__subtext">Sunday:</span><p class="footer__text">9:00 am - 5:00pm</p></li>
+          </ul>
+          <ul class="footer__list p-0">
+            <li class="footer__item"><b class="footer__title">INFORMATION</b></li>
+            <li class="footer__items"><a class="footer__link" href="#">About us</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Blog</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Check out</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Contact</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Service</a></li>
+          </ul>
+          <ul class="footer__list p-0">
+            <li class="footer__item"><b class="footer__title">MY ACCOUNT</b></li>
+            <li class="footer__items"><a class="footer__link" href="#">My Account</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Contact</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Shopping cart</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Shop</a></li>
+          </ul>
+          <ul class="footer__list p-0">
+            <li class="footer__item"><b class="footer__title">CATEGORIES</b></li>
+            <li class="footer__items"><a class="footer__link" href="#">Fruits & Vegetables</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Dairy Products</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Package Foods</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Beverage</a></li>
+            <li class="footer__items"><a class="footer__link" href="#">Beverage</a></li>
+          </ul>
+          <ul class="footer__list p-0">
+            <li class="footer__item"><b class="footer__title">ACCEPT PAYMENT</b></li>
+            <li class="footer__items"><img class="footer__img" src="img/footer-img/footer-img.png" alt="footer-img"></li>
+            <li class="footer__item"><b class="footer__title">FOLLOW US</b></li>
+          </ul>
+        </div>
+        <div class="footer__bottom ">
+          <p class="footer__bottom-text text-center m-0">Copyright © 2021 <span class="footer__bottom-yellow">Freshio</span>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

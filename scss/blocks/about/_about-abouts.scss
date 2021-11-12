@@ -1,0 +1,34 @@
+.about {
+  padding: 60px 0;
+  background-color: #fff;
+  &__title {
+    @include herotitle-style;
+  }
+  &__contents {
+    padding: 20px;
+  }
+  .about__subtitle {
+    font-family: $font-mazexlight;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .about__text {
+    font-family: $font-mazbold;
+    color: #aaa;
+
+  }
+  .about__subtext {
+    font-family: $font-mazexlight;
+    font-weight: 500;
+    font-size: .875rem;
+    color: #aaa;
+    font-weight: 400;
+  }
+  .about__item {
+    font-family: $font-mazexlight;
+    font-weight: 500;
+    font-size: .875rem;
+    color: #aaa;
+    font-weight: 400;
+  }
+}

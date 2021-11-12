@@ -1,0 +1,115 @@
+.people {
+  padding-bottom: 85px;
+  &__contents {
+    padding-bottom: 40px;
+  }
+  &__contentss {
+    padding-bottom: 85px;
+    border-bottom: 1px solid #ccc;
+  }
+  &__img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  &__des {
+    padding: 0 80px;
+  }
+  &__title {
+    @include herotitle-style;
+    max-width: 370px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  &__titles {
+    position: relative;
+    &::before {
+      content: "";
+      width: 47px;
+      height: 37px;
+      display: inline-block;
+      position: absolute;
+      left: 375px;
+      transform: rotate(180deg);  
+      background-image: url("../../img/people-img/people-quote.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  &__carusels {
+    width: 100% !important;
+  }
+  &__text {
+    font-family: $font-mazexlight;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-555;
+  }
+  &__texts {
+    color: $color-black;
+  }
+  &__link {
+    @include hero-link;
+    color: $color-yellow;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+  &__carosel-indifikator {
+    display: block !important;
+    bottom: -70px;
+    left: -70px;
+  }
+  &__right {
+    margin-left: 5px;
+    transition: transform 0.4s ease;
+  }
+  &__link:hover &__right {
+    transform: translateX(5px);
+  }
+  &__subtext {
+    font-family: $font-mazexlight;
+    font-weight: 500;
+    font-size: 14px;
+    color: #aaa;
+  }
+  &__round-btn {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background-color: #aaa !important;
+    margin-right: 15px !important;
+  }
+  &__round-btn--active {
+    background-color: $color-green !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+    .people {
+      &__des {
+        padding: 0 20px;
+      }
+    }
+}
+@media screen and (max-width: 991px) {
+  .people {
+    &__des {
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+    .people {
+      &__img {
+        margin-bottom: 32px;
+      }
+      &__desss {
+        margin-top: 32px;
+      }
+      &__carusels {
+        margin-left: 15px;
+      }
+   }
+}

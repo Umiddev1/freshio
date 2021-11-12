@@ -1,0 +1,14 @@
+.about-icons {
+  background-color: #fff;
+  padding: 40px 0;
+  padding-right: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.about-icon__link {
+  font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+    .about-icons__contents {
+      flex-direction: column;
+    }
+}

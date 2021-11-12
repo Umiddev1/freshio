@@ -3,3 +3,29 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin herotext-style {
+  font-size: 40px;
+  line-height: 24px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #bac34e;
+  font-family: "richmond";
+}
+@mixin herotitle-style {
+  font-size: 40px;
+  font-style: bold;
+  line-height: 45px;
+  color: $color-green;
+  font-family: "mazzard extralight";
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+@mixin hero-link {
+  font-size: 12px;
+  color: $color-black;
+  font-family: $font-mazbold;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.4s ease;
+}

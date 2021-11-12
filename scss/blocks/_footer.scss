@@ -1,0 +1,63 @@
+.footer {
+  &__contents {
+    border-bottom: 1px solid #ccc;
+  }
+  &__title {
+    font-family: $font-mazbold;
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-black;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-black;
+    line-height: 24px;
+  }
+  &__subtext {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaa;
+  }
+  &__items {
+    margin-bottom: 10px;
+  }
+  &__link {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    color: $color-555;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+  &__img {
+    margin-bottom: 40px;  
+    margin-top: 5px;
+  }
+  &__bottom-text {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    color: $color-555;
+    padding: 40px 0;
+  }
+  &__bottom-yellow {
+    color: $color-yellow;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 963px) {
+    .footer {
+      &__contents {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+}

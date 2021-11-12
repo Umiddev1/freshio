@@ -1,0 +1,109 @@
+.intro {
+  margin-bottom: 90px;
+  &__list {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  &__item {
+    display: block;
+    margin-bottom: 24px;
+    padding-left: 15px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: -30px;
+      position: absolute;
+      top: 107px;
+      background: $color-green;
+      transition: width 0.4s;
+    }
+    &:hover::after {
+      width: 110%;
+    }
+    &::before {
+      content: "";
+      width: 62px;
+      height: 64px;
+      display: inline-block;
+      background-image: url("../../img/intro-img/intro-img-one.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin-right: 15px;
+    }
+    &:nth-child(2)::before {
+      background-image: url("../../img/intro-img/intro-img-two.png");
+    }
+    &:nth-child(3)::before {
+      background-image: url("../../img/intro-img/intro-img-three.png");
+    }
+    &:nth-child(4)::before {
+      background-image: url("../../img/intro-img/intro-img-four.png");
+    }
+  }
+  &__inner-title {
+    font-family: $font-mazexlight;
+    color: $color-green;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  &__inner-text {
+    width: 172px;
+    font-family: $font-mazexlight;
+    font-size: 12px;
+    color: $color-555;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+    .intro {
+      &__item {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 575px) {
+  .intro {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+  }  
+}
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+h2{
+  font-family:sans-serif;
+  color:#000;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+  display: flex;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+
+.product-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}

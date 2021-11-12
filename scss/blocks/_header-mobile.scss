@@ -1,0 +1,111 @@
+.mobile {
+  &__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: $color-black;
+  }
+  &__carzina {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background-color: #f3e4dc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    &:hover {
+      background-color: $color-yellow;
+    }
+    &:hover .mobile__carzina-icon {
+      color: #fff;
+    }
+  }
+  &__carzinas {
+    position: relative;
+  }
+  &__carzina-wrapper {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e0bf96;
+    border-radius: 50%;
+    right: -10px;
+  }
+  &__carzina-link {
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 1.5px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__carzina-icon {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.4s ease;
+  }
+  &__header {
+    justify-content: end !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  &__rightmenu {
+    width: 300px;
+    background-color: $color-green;
+    cursor: pointer;
+  }
+  &__rightmenu-item {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #073522;
+  }
+  &__close {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: $color-yellow;
+    position: relative;
+    right: 0 !important;
+  }
+  &__close-text {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-yellow;
+  }
+  &__rightmenu-item:nth-child(1) {
+    border-top: 1px solid #073522;
+  }
+  &__rightmenu-link {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+  &__carets {
+    width: 48px;
+    height: 48px;
+    border-left: 1px solid #073522;
+    position: relative;
+  }
+  &__caret {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

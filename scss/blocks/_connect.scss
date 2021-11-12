@@ -1,0 +1,137 @@
+.connect {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  &__icons {
+   font-size: 64px;
+   color: $color-yellow;
+   padding: 30px;
+  }
+  &__border {
+    max-width: 100%;
+    height: 202px;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+  }
+  &__dess {
+    border-left:1px solid #ebebeb;
+    padding-left: 40px;
+  }
+  &__text {
+    font-family: $font-mazexlight;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #aaa;
+  }
+  &__title {
+    font-size: 12px;
+    color: $color-black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__link {
+    font-family: $font-mazexlight;
+    font-size: 30px;
+    font-weight: 700;
+    color: #bac34e;
+    display: inline-block;
+    margin-bottom: 15px;
+    line-height: 30px;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+  &__links {
+    font-family: $font-mazexlight;
+    font-size: 14px;
+    color: $color-green;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 20px;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+  &__linkss {
+    &:hover {
+      color: $color-green;
+    }
+  }
+  &__titles {
+    margin-bottom: 10px;
+  }
+  &__form {
+    position: relative;
+    width: 100%;
+  }
+  &__inp {
+    width: 100%;
+    height: 38px;
+    font-family: $font-mazexlight;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0px 45px 0px 15px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    outline: $color-yellow;
+    transition: border-color 0.3s ease;
+    &:hover {
+      border-color: $color-yellow;
+    }
+  }
+  &__righticon {
+    position: absolute;
+    right: 15px;
+    top: 34px;
+    color: $color-green;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+    .connect {
+      &__border {
+        flex-direction: column;
+        height: 260px;
+      }
+      &__dess {
+        width: 100%;
+        border-left:none;
+      }
+      &__form {
+        right: 10px;
+      }
+      &__icons {
+        padding: 0;
+        margin-left: 45px;
+        margin-bottom: 20px;
+      }
+    }
+}
+@media screen and (max-width: 576px) {
+    .connect {
+      &__dess {
+        text-align: center;
+      }
+    }
+}
+@media screen and (max-width: 450px) {
+    .connect {
+      &__border {
+        height: 290px;
+      }
+      &__dess {
+        padding-right: 25px;
+      }
+      &__icons {
+        margin-left: 20px;
+      }
+    }
+}
